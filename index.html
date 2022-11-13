@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colossal Cave Adventure</title>
+    <style>
+        .colossal-cave-adventure {
+            background: linear-gradient(
+                    rgba(18, 16, 16, 0) 50%,
+                    rgba(0, 0, 0, 0.25) 50%
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(255, 0, 0, 0.06),
+                    rgba(0, 255, 0, 0.02),
+                    rgba(0, 0, 255, 0.06)
+                );
+            z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            resize: none;
+            animation: flicker 1.5s infinite;
+        }
+
+        @keyframes flicker {
+            000% { opacity: 0.27861; }
+            005% { opacity: 0.34769; }
+            010% { opacity: 0.23604; }
+            015% { opacity: 0.90626; }
+            020% { opacity: 0.18128; }
+            025% { opacity: 0.83891; }
+            030% { opacity: 0.65583; }
+            035% { opacity: 0.67807; }
+            040% { opacity: 0.26559; }
+            045% { opacity: 0.84693; }
+            050% { opacity: 0.96019; }
+            055% { opacity: 0.08594; }
+            060% { opacity: 0.20313; }
+            065% { opacity: 0.71988; }
+            070% { opacity: 0.53455; }
+            075% { opacity: 0.37288; }
+            080% { opacity: 0.71428; }
+            085% { opacity: 0.70419; }
+            090% { opacity: 0.70030; }
+            095% { opacity: 0.36108; }
+            100% { opacity: 0.24387; }
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea class="colossal-cave-adventure" cols="80" rows="24" readonly resize>
+You are in a twisty maze of passageways, all different
+>
+    </textarea>
+</body>
+
+</html>
